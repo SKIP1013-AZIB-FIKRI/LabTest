@@ -1,0 +1,35 @@
+package laB1;
+import java.util.Scanner;
+public class Question2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		double sales, wages = 5, hours,com;
+		System.out.print("Enter sales : RM ");
+		sales = sc.nextDouble();
+		System.out.print("\nEnter hours : ");
+		hours = sc.nextDouble();
+		
+		if ((sales > 150) && (sales <300 )) {
+			com = sales * 0.05 ;
+			System.out.printf("\nCommission : RM %.2f", com);
+			wages = (wages* hours) + com ;
+			System.out.printf("\nDaily Wages : RM %.2f", wages);
+		}else if ((sales >= 301) && (sales <500)) {
+			com = sales * 0.1 ;
+			System.out.printf("\nCommission : RM %.2f", com);
+			wages = (wages* hours) + com ;
+			System.out.printf("\nDaily Wages : RM %.2f", wages);
+		} else if ((sales >= 501)) {
+			com = sales * 0.15 ;
+			System.out.printf("\nCommission : RM %.2f", com);
+			wages = (wages* hours) + com ;
+			System.out.printf("\nDaily Wages : RM %.2f", wages);
+		}else {
+			wages = (wages* hours) ;
+			System.out.printf("\nDaily Wages : RM %.2f", wages);
+		}
+	}
+
+}
