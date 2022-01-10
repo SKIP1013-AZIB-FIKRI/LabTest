@@ -1,0 +1,13 @@
+Enter the number of items : 
+2
+Enter the price of first item : RM
+200
+Enter the quantity of first item : 
+5
+Enter the price of second item : RM
+20
+Enter the quantity of second item : 
+1
+Total Price : RM 1020.00
+discount received : RM 204.00
+price to be paid : RM 816.00
